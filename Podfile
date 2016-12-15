@@ -8,5 +8,7 @@ target 'quickneasy' do
   # Pods for quickneasy
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'Google/SignIn'
+
 
 end

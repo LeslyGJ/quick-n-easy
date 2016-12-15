@@ -7,17 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		097C54871E026783000FEC46 /* GoogleToolboxForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 097C54861E026783000FEC46 /* GoogleToolboxForMac.framework */; };
 		2319479F1DD7D20E000C7429 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2319479E1DD7D20E000C7429 /* GoogleService-Info.plist */; };
 		23DFA2E31DCBF44700D036A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DFA2E21DCBF44700D036A0 /* AppDelegate.swift */; };
 		23DFA2E51DCBF44700D036A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DFA2E41DCBF44700D036A0 /* ViewController.swift */; };
 		23DFA2E81DCBF44700D036A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23DFA2E61DCBF44700D036A0 /* Main.storyboard */; };
 		23DFA2EA1DCBF44700D036A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23DFA2E91DCBF44700D036A0 /* Assets.xcassets */; };
 		23DFA2ED1DCBF44700D036A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23DFA2EB1DCBF44700D036A0 /* LaunchScreen.storyboard */; };
-		3C565BA0AF11210AE1AAD545 /* Pods_quickneasy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2234B85C4A3CA80C9A4EF0F8 /* Pods_quickneasy.framework */; };
+		FCE6747C13BD412B629D2130 /* Pods_quickneasy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E39F622F51A5835A28F1504 /* Pods_quickneasy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2234B85C4A3CA80C9A4EF0F8 /* Pods_quickneasy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_quickneasy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		064832384315A1D4FE705591 /* Pods-quickneasy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quickneasy.release.xcconfig"; path = "Pods/Target Support Files/Pods-quickneasy/Pods-quickneasy.release.xcconfig"; sourceTree = "<group>"; };
+		093384351E024F9C00A46AE7 /* quickneasy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "quickneasy-Bridging-Header.h"; sourceTree = "<group>"; };
+		097C54851E0266C9000FEC46 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		097C54861E026783000FEC46 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleToolboxForMac.framework; path = "../../../Library/Developer/Xcode/DerivedData/quickneasy-chhrrlgbjflmhtfglonjqisbxcai/Build/Products/Debug-iphonesimulator/GoogleToolboxForMac/GoogleToolboxForMac.framework"; sourceTree = "<group>"; };
+		0E39F622F51A5835A28F1504 /* Pods_quickneasy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_quickneasy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2319479E1DD7D20E000C7429 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		23DFA2DF1DCBF44700D036A0 /* quickneasy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quickneasy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23DFA2E21DCBF44700D036A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -26,8 +31,7 @@
 		23DFA2E91DCBF44700D036A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23DFA2EC1DCBF44700D036A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23DFA2EE1DCBF44700D036A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7DFEC098789FABC8F76BACA7 /* Pods-quickneasy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quickneasy.release.xcconfig"; path = "Pods/Target Support Files/Pods-quickneasy/Pods-quickneasy.release.xcconfig"; sourceTree = "<group>"; };
-		A7D787F6387D7A5932028FAC /* Pods-quickneasy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quickneasy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-quickneasy/Pods-quickneasy.debug.xcconfig"; sourceTree = "<group>"; };
+		53677833A0BE150E1E0CC7AA /* Pods-quickneasy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quickneasy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-quickneasy/Pods-quickneasy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C565BA0AF11210AE1AAD545 /* Pods_quickneasy.framework in Frameworks */,
+				097C54871E026783000FEC46 /* GoogleToolboxForMac.framework in Frameworks */,
+				FCE6747C13BD412B629D2130 /* Pods_quickneasy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,8 +52,8 @@
 			children = (
 				23DFA2E11DCBF44700D036A0 /* quickneasy */,
 				23DFA2E01DCBF44700D036A0 /* Products */,
-				5D610A0EC1496EE84E25DA69 /* Pods */,
-				D5DEAB28869FAEEF37651AE0 /* Frameworks */,
+				E43ADFA3C942B44F4CFD499A /* Pods */,
+				B3EA543C4B762860C11330DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,25 +75,27 @@
 				23DFA2E91DCBF44700D036A0 /* Assets.xcassets */,
 				23DFA2EB1DCBF44700D036A0 /* LaunchScreen.storyboard */,
 				23DFA2EE1DCBF44700D036A0 /* Info.plist */,
+				093384351E024F9C00A46AE7 /* quickneasy-Bridging-Header.h */,
 			);
 			path = quickneasy;
 			sourceTree = "<group>";
 		};
-		5D610A0EC1496EE84E25DA69 /* Pods */ = {
+		B3EA543C4B762860C11330DD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A7D787F6387D7A5932028FAC /* Pods-quickneasy.debug.xcconfig */,
-				7DFEC098789FABC8F76BACA7 /* Pods-quickneasy.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		D5DEAB28869FAEEF37651AE0 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2234B85C4A3CA80C9A4EF0F8 /* Pods_quickneasy.framework */,
+				097C54861E026783000FEC46 /* GoogleToolboxForMac.framework */,
+				0E39F622F51A5835A28F1504 /* Pods_quickneasy.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E43ADFA3C942B44F4CFD499A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53677833A0BE150E1E0CC7AA /* Pods-quickneasy.debug.xcconfig */,
+				064832384315A1D4FE705591 /* Pods-quickneasy.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,12 +105,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23DFA2F11DCBF44700D036A0 /* Build configuration list for PBXNativeTarget "quickneasy" */;
 			buildPhases = (
-				4790C2F9CD138D73290897F0 /* [CP] Check Pods Manifest.lock */,
+				81904D00D98963F6536DD20E /* [CP] Check Pods Manifest.lock */,
 				23DFA2DB1DCBF44700D036A0 /* Sources */,
 				23DFA2DC1DCBF44700D036A0 /* Frameworks */,
 				23DFA2DD1DCBF44700D036A0 /* Resources */,
-				23DE7BA1A78BA655E46DC156 /* [CP] Embed Pods Frameworks */,
-				0C47CF06163961AB1F43CDA9 /* [CP] Copy Pods Resources */,
+				F7F912B9D4B477AD73410E1D /* [CP] Embed Pods Frameworks */,
+				B2E617B6CEED8266B7586E85 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -162,7 +169,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0C47CF06163961AB1F43CDA9 /* [CP] Copy Pods Resources */ = {
+		81904D00D98963F6536DD20E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B2E617B6CEED8266B7586E85 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -177,7 +199,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-quickneasy/Pods-quickneasy-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		23DE7BA1A78BA655E46DC156 /* [CP] Embed Pods Frameworks */ = {
+		F7F912B9D4B477AD73410E1D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -190,21 +212,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-quickneasy/Pods-quickneasy-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4790C2F9CD138D73290897F0 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -226,6 +233,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				23DFA2E71DCBF44700D036A0 /* Base */,
+				097C54851E0266C9000FEC46 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -328,25 +336,27 @@
 		};
 		23DFA2F21DCBF44700D036A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7D787F6387D7A5932028FAC /* Pods-quickneasy.debug.xcconfig */;
+			baseConfigurationReference = 53677833A0BE150E1E0CC7AA /* Pods-quickneasy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = quickneasy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.csumb.lea.quickneasy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "quickneasy-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		23DFA2F31DCBF44700D036A0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7DFEC098789FABC8F76BACA7 /* Pods-quickneasy.release.xcconfig */;
+			baseConfigurationReference = 064832384315A1D4FE705591 /* Pods-quickneasy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = quickneasy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.csumb.lea.quickneasy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "quickneasy-Bridging-Header.h";
 			};
 			name = Release;
 		};
