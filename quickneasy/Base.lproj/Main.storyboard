@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -25,14 +25,23 @@
                                 <rect key="frame" x="67" y="20" width="186" height="113"/>
                             </imageView>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wcq-fd-8rm" customClass="GIDSignInButton">
-                                <rect key="frame" x="20" y="202" width="280" height="55"/>
+                                <rect key="frame" x="20" y="199" width="280" height="55"/>
                                 <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="E9DC1CF7-26E0-4214-84C2-F5270E954114" translatesAutoresizingMaskIntoConstraints="NO" id="N3A-Fl-FQD">
-                                        <rect key="frame" x="118" y="5" width="45" height="45"/>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="65E5A1F4-9002-4A37-80FD-A1489017116A" translatesAutoresizingMaskIntoConstraints="NO" id="N3A-Fl-FQD">
+                                        <rect key="frame" x="117" y="5" width="45" height="45"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rwy-GC-rlZ" colorLabel="IBBuiltInLabel-Blue">
+                                <rect key="frame" x="130" y="262" width="60" height="30"/>
+                                <state key="normal" title="Sign Out">
+                                    <color key="titleColor" red="1" green="0.18746411756643777" blue="0.13933265040366816" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapSignOut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IqH-6i-tDB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -50,17 +59,18 @@
                             <constraint firstItem="XrR-Jf-ht7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="zpe-Vx-7je"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="pNs-ag-zbk"/>
                     <connections>
-                        <outlet property="signInButton" destination="Wcq-fd-8rm" id="J6R-bg-2CE"/>
+                        <outlet property="signInButton" destination="Wcq-fd-8rm" id="awE-6D-4Dg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="291" y="-114"/>
+            <point key="canvasLocation" x="305" y="-409"/>
         </scene>
     </scenes>
     <resources>
-        <image name="E9DC1CF7-26E0-4214-84C2-F5270E954114" width="18" height="18">
+        <image name="65E5A1F4-9002-4A37-80FD-A1489017116A" width="18" height="18">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGOjtYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBEW
 GxwgISgrLjQ3VSRudWxs1AkKCwwNDg8QViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBzV05TQ29sb3KA

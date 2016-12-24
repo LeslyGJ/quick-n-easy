@@ -14,9 +14,12 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
  
     @IBOutlet weak var signInButton: GIDSignInButton!
     
-    @IBAction func didTapSignOut(sender: AnyObject) {
-        GIDSignIn.sharedInstance().signOut()
+    
+    @IBAction func didTapSignOut(sender: AnyObject) {GIDSignIn.sharedInstance().signOut()
+        print("Signout")
     }
+    
+   
     
     
     override func viewDidLoad() {
@@ -48,8 +51,8 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
     
     // Present a view that prompts the user to sign in with Google
     func signIn(signIn: GIDSignIn!,
-                presentViewController viewController: UIViewController!) {
-        self.presentViewController(viewController, animated: true, completion: nil)
+                presentViewController SecondviewController: UIViewController!) {
+        self.presentViewController(SecondviewController, animated: true, completion: nil)
     }
     
     // Dismiss the "Sign in with Google" view
