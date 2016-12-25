@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (3.2.1)
   - Firebase/Auth (3.9.0):
     - Firebase/Core
     - FirebaseAuth (= 3.0.6)
@@ -53,11 +54,13 @@ PODS:
     - GTMSessionFetcher/Core (= 1.1.7)
 
 DEPENDENCIES:
+  - Alamofire (= 3.2.1)
   - Firebase/Auth
   - Firebase/Core
   - Google/SignIn
 
 SPEC CHECKSUMS:
+  Alamofire: f11d8624a05f5d39e0c99309b3e600a3ba64298a
   Firebase: ff77ffb77b317c3720fef57a60e9335cebf962e6
   FirebaseAnalytics: 6e58fc9b397664369ac7617fb0ba93fab6ba7b5b
   FirebaseAuth: 96e9674ff31d6e1f826d53e26aa003a57cab0295
@@ -72,6 +75,6 @@ SPEC CHECKSUMS:
   GTMOAuth2: 7fc9c10f5c745f4d9850419ea88889fe3baa6b7d
   GTMSessionFetcher: a1f8ed39e4fe21c68957daed472c7afbcdf29166
 
-PODFILE CHECKSUM: 1879a8c09f6cc961fdcd3c673d4205ff080dbeef
+PODFILE CHECKSUM: d430bffc13d9bc19b581ceae5721b905c9c60ff4
 
 COCOAPODS: 1.1.1
