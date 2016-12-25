@@ -2,25 +2,33 @@
 //  ViewController.swift
 //  quickneasy
 //
-//  Created by Eliasar Gandara on 11/3/16.
+//  Created on 11/3/16.
 //  Copyright © 2016 LEA. All rights reserved.
 //
 
 import UIKit
 import GoogleSignIn
 import FirebaseAuth
-class ViewController: UIViewController, GIDSignInUIDelegate {
 
- 
-    @IBOutlet weak var signInButton: GIDSignInButton!
+class ViewController: UIViewController, GIDSignInUIDelegate {
     
+    @IBOutlet weak var signInButton: GIDSignInButton!
+    var recipeCall = RecipeCall()
     
     @IBAction func didTapSignOut(sender: AnyObject) {GIDSignIn.sharedInstance().signOut()
         print("Signout")
+        
+        recipeCall.getRecipeInformation(["id": 534573], queryParameters: [:]) {
+            (json) -> () in
+            print(json)
+        }
+        
+        recipeCall.findByIngredients( [:],
+            queryParameters: ["ingredients": ["apple", "flour", "sugar"], "number": 5, "ranking": 1])
+        { (json) -> () in
+            print(json)
+        }
     }
-    
-   
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
