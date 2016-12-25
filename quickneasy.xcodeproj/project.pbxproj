@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		097C54871E026783000FEC46 /* GoogleToolboxForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 097C54861E026783000FEC46 /* GoogleToolboxForMac.framework */; };
 		09BE14D71E0E10ED00CF71C7 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BE14D61E0E10ED00CF71C7 /* ContentViewController.swift */; };
+		2307F2441E0F5AFC00572D4B /* RecipeCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2307F2421E0F5AFC00572D4B /* RecipeCall.swift */; };
+		2307F2451E0F5AFC00572D4B /* RecipeUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2307F2431E0F5AFC00572D4B /* RecipeUrl.swift */; };
 		2319479F1DD7D20E000C7429 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2319479E1DD7D20E000C7429 /* GoogleService-Info.plist */; };
 		23DFA2E31DCBF44700D036A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DFA2E21DCBF44700D036A0 /* AppDelegate.swift */; };
 		23DFA2E51DCBF44700D036A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DFA2E41DCBF44700D036A0 /* ViewController.swift */; };
@@ -25,6 +27,8 @@
 		097C54861E026783000FEC46 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleToolboxForMac.framework; path = "../../../Library/Developer/Xcode/DerivedData/quickneasy-chhrrlgbjflmhtfglonjqisbxcai/Build/Products/Debug-iphonesimulator/GoogleToolboxForMac/GoogleToolboxForMac.framework"; sourceTree = "<group>"; };
 		09BE14D61E0E10ED00CF71C7 /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		0E39F622F51A5835A28F1504 /* Pods_quickneasy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_quickneasy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2307F2421E0F5AFC00572D4B /* RecipeCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCall.swift; sourceTree = "<group>"; };
+		2307F2431E0F5AFC00572D4B /* RecipeUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeUrl.swift; sourceTree = "<group>"; };
 		2319479E1DD7D20E000C7429 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		23DFA2DF1DCBF44700D036A0 /* quickneasy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quickneasy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23DFA2E21DCBF44700D036A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +53,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2307F23A1E0F49CF00572D4B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				2307F2411E0F5AFC00572D4B /* Recipe */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		2307F2411E0F5AFC00572D4B /* Recipe */ = {
+			isa = PBXGroup;
+			children = (
+				2307F2421E0F5AFC00572D4B /* RecipeCall.swift */,
+				2307F2431E0F5AFC00572D4B /* RecipeUrl.swift */,
+			);
+			path = Recipe;
+			sourceTree = "<group>";
+		};
+		2307F2461E0F705100572D4B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		23DFA2D61DCBF44700D036A0 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +98,8 @@
 		23DFA2E11DCBF44700D036A0 /* quickneasy */ = {
 			isa = PBXGroup;
 			children = (
+				2307F2461E0F705100572D4B /* ViewControllers */,
+				2307F23A1E0F49CF00572D4B /* Networking */,
 				2319479E1DD7D20E000C7429 /* GoogleService-Info.plist */,
 				23DFA2E21DCBF44700D036A0 /* AppDelegate.swift */,
 				23DFA2E41DCBF44700D036A0 /* ViewController.swift */,
@@ -136,6 +166,7 @@
 				TargetAttributes = {
 					23DFA2DE1DCBF44700D036A0 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 2A9ZA2UBWH;
 					};
 				};
 			};
@@ -227,6 +258,8 @@
 				23DFA2E51DCBF44700D036A0 /* ViewController.swift in Sources */,
 				09BE14D71E0E10ED00CF71C7 /* ContentViewController.swift in Sources */,
 				23DFA2E31DCBF44700D036A0 /* AppDelegate.swift in Sources */,
+				2307F2451E0F5AFC00572D4B /* RecipeUrl.swift in Sources */,
+				2307F2441E0F5AFC00572D4B /* RecipeCall.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,10 +376,13 @@
 			baseConfigurationReference = 53677833A0BE150E1E0CC7AA /* Pods-quickneasy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = quickneasy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.csumb.lea.quickneasy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "quickneasy-Bridging-Header.h";
 			};
 			name = Debug;
@@ -356,10 +392,13 @@
 			baseConfigurationReference = 064832384315A1D4FE705591 /* Pods-quickneasy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = quickneasy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.csumb.lea.quickneasy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "quickneasy-Bridging-Header.h";
 			};
 			name = Release;
