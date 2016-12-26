@@ -16,6 +16,7 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
     var recipeCall = RecipeCall()
     
     @IBAction func didTapSignOut(sender: AnyObject) {GIDSignIn.sharedInstance().signOut()
+        
         print("Signout")
         
         recipeCall.getRecipeInformation(["id": 534573], queryParameters: [:]) {
@@ -35,6 +36,7 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
         
         
         GIDSignIn.sharedInstance().uiDelegate = self
+        
         
         
         // Uncomment to automatically sign in the user.
@@ -67,7 +69,13 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
     func signIn(signIn: GIDSignIn!,
                 dismissViewController viewController: UIViewController!) {
         self.dismissViewControllerAnimated(true, completion: nil)
+        let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("searchView") as UIViewController
+        // .instantiatViewControllerWithIdentifier() returns AnyObject! this must be downcast to utilize it
+        
+        self.presentViewController(viewController, animated: false, completion: nil)
+        
     }
+   
     
     func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!,
                 withError error: NSError!) {
@@ -77,7 +85,8 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
             print("\(error.localizedDescription)")
         }
     }
-  
+    
+
     
     
     // Present a view that prompts the user to sign in with Google
