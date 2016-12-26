@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -27,23 +27,14 @@
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wcq-fd-8rm" customClass="GIDSignInButton">
                                 <rect key="frame" x="21" y="193" width="280" height="55"/>
                                 <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="45F1FD3B-B569-4438-8142-441BF294131E" translatesAutoresizingMaskIntoConstraints="NO" id="N3A-Fl-FQD">
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="00DB2832-085A-4AB9-974A-DD758830685F" translatesAutoresizingMaskIntoConstraints="NO" id="N3A-Fl-FQD">
                                         <rect key="frame" x="117" y="5" width="45" height="45"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rwy-GC-rlZ" colorLabel="IBBuiltInLabel-Blue">
-                                <rect key="frame" x="130" y="141" width="60" height="30"/>
-                                <state key="normal" title="Sign Out">
-                                    <color key="titleColor" red="1" green="0.18746411756643777" blue="0.13933265040366816" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="didTapSignOut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IqH-6i-tDB"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVT-VK-yau">
-                                <rect key="frame" x="130" y="269" width="62" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVT-VK-yau">
+                                <rect key="frame" x="130" y="294" width="62" height="30"/>
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -62,8 +53,6 @@
                             <constraint firstAttribute="trailing" secondItem="crg-lC-5U0" secondAttribute="trailing" id="Wbt-6h-mzo"/>
                             <constraint firstItem="XrR-Jf-ht7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Yfx-WW-isc"/>
                             <constraint firstItem="Wcq-fd-8rm" firstAttribute="centerX" secondItem="XrR-Jf-ht7" secondAttribute="centerX" constant="1" id="bDy-CZ-H5x"/>
-                            <constraint firstItem="Rwy-GC-rlZ" firstAttribute="top" secondItem="XrR-Jf-ht7" secondAttribute="bottom" constant="8" symbolic="YES" id="f7t-8H-SdS"/>
-                            <constraint firstItem="Rwy-GC-rlZ" firstAttribute="centerX" secondItem="XrR-Jf-ht7" secondAttribute="centerX" id="g8C-En-ceX"/>
                             <constraint firstItem="XrR-Jf-ht7" firstAttribute="centerX" secondItem="crg-lC-5U0" secondAttribute="centerX" id="ixt-SN-7GY"/>
                             <constraint firstItem="hVT-VK-yau" firstAttribute="centerX" secondItem="Wcq-fd-8rm" secondAttribute="centerX" id="jjF-ID-XtO"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="XrR-Jf-ht7" secondAttribute="bottom" constant="435" id="qGD-Pw-Opz"/>
@@ -81,10 +70,10 @@
             </objects>
             <point key="canvasLocation" x="305" y="-409"/>
         </scene>
-        <!--View Controller-->
+        <!--UISearchView-->
         <scene sceneID="8yN-6c-gge">
             <objects>
-                <viewController id="k4A-VZ-L3R" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="searchView" title="UISearchView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="k4A-VZ-L3R" customClass="ViewController" customModule="quickneasy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WwH-zB-7B3"/>
                         <viewControllerLayoutGuide type="bottom" id="ZK1-Px-mKh"/>
@@ -93,10 +82,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="70M-Xw-CUn">
-                                <rect key="frame" x="0.0" y="64" width="320" height="460"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
                             <searchBar contentMode="redraw" text="Search for a recipe" translatesAutoresizingMaskIntoConstraints="NO" id="cSk-9T-69S">
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -104,9 +89,26 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vSR-ec-zHl">
                                 <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <items>
-                                    <barButtonItem title="Item" id="5cT-bi-HT9"/>
+                                    <barButtonItem title="Item " id="5cT-bi-HT9"/>
+                                    <barButtonItem style="plain" id="ca9-lY-oqc">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Rwy-GC-rlZ" colorLabel="IBBuiltInLabel-Blue">
+                                            <rect key="frame" x="56" y="7" width="60" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Sign Out">
+                                                <color key="titleColor" red="1" green="0.18746411756643777" blue="0.13933265040366816" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="didTapSignOut:" destination="k4A-VZ-L3R" eventType="touchUpInside" id="OMH-2w-hnr"/>
+                                                <segue destination="BYZ-38-t0r" kind="modal" id="Bsy-cD-meQ"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="70M-Xw-CUn">
+                                <rect key="frame" x="0.0" y="64" width="320" height="460"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -126,11 +128,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kzg-kJ-EYY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="695" y="-409"/>
+            <point key="canvasLocation" x="682" y="-404"/>
         </scene>
     </scenes>
     <resources>
-        <image name="45F1FD3B-B569-4438-8142-441BF294131E" width="18" height="18">
+        <image name="00DB2832-085A-4AB9-974A-DD758830685F" width="18" height="18">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGOjtYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBEW
 GxwgISgrLjQ3VSRudWxs1AkKCwwNDg8QViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBzV05TQ29sb3KA
