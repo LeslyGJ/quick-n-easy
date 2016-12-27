@@ -79,6 +79,21 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		23958DEA1E13226C008DBDD1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				23958DEB1E13226C008DBDD1 /* Recipe */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		23958DEB1E13226C008DBDD1 /* Recipe */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Recipe;
+			sourceTree = "<group>";
+		};
 		23DFA2D61DCBF44700D036A0 = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +115,7 @@
 		23DFA2E11DCBF44700D036A0 /* quickneasy */ = {
 			isa = PBXGroup;
 			children = (
+				23958DEA1E13226C008DBDD1 /* Models */,
 				2307F2461E0F705100572D4B /* ViewControllers */,
 				2307F23A1E0F49CF00572D4B /* Networking */,
 				2319479E1DD7D20E000C7429 /* GoogleService-Info.plist */,
