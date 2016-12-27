@@ -2,7 +2,6 @@
 # platform :ios, '9.0'
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '9.0'
-use_frameworks!
 
 target 'quickneasy' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
@@ -14,5 +13,6 @@ target 'quickneasy' do
   pod 'Google/SignIn'
 
   pod 'Alamofire', '3.2.1'
+  pod 'ObjectMapper', '~> 2.2'
 
 end
