@@ -17,6 +17,7 @@
 		23DFA2E81DCBF44700D036A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23DFA2E61DCBF44700D036A0 /* Main.storyboard */; };
 		23DFA2EA1DCBF44700D036A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23DFA2E91DCBF44700D036A0 /* Assets.xcassets */; };
 		23DFA2ED1DCBF44700D036A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23DFA2EB1DCBF44700D036A0 /* LaunchScreen.storyboard */; };
+		407CF4C21E1285E700EB11CE /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407CF4C11E1285E700EB11CE /* CustomCell.swift */; };
 		FCE6747C13BD412B629D2130 /* Pods_quickneasy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E39F622F51A5835A28F1504 /* Pods_quickneasy.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		23DFA2E91DCBF44700D036A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23DFA2EC1DCBF44700D036A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23DFA2EE1DCBF44700D036A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		407CF4C11E1285E700EB11CE /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		53677833A0BE150E1E0CC7AA /* Pods-quickneasy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quickneasy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-quickneasy/Pods-quickneasy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,6 +107,7 @@
 				23DFA2E41DCBF44700D036A0 /* ViewController.swift */,
 				09BE14D61E0E10ED00CF71C7 /* ContentViewController.swift */,
 				23DFA2E61DCBF44700D036A0 /* Main.storyboard */,
+				407CF4C11E1285E700EB11CE /* CustomCell.swift */,
 				23DFA2E91DCBF44700D036A0 /* Assets.xcassets */,
 				23DFA2EB1DCBF44700D036A0 /* LaunchScreen.storyboard */,
 				23DFA2EE1DCBF44700D036A0 /* Info.plist */,
@@ -259,6 +262,7 @@
 				09BE14D71E0E10ED00CF71C7 /* ContentViewController.swift in Sources */,
 				23DFA2E31DCBF44700D036A0 /* AppDelegate.swift in Sources */,
 				2307F2451E0F5AFC00572D4B /* RecipeUrl.swift in Sources */,
+				407CF4C21E1285E700EB11CE /* CustomCell.swift in Sources */,
 				2307F2441E0F5AFC00572D4B /* RecipeCall.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

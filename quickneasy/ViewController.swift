@@ -10,7 +10,7 @@ import UIKit
 import GoogleSignIn
 import FirebaseAuth
 
-class ViewController: UIViewController, GIDSignInUIDelegate {
+class ViewController: UIViewController, GIDSignInUIDelegate, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var signInButton: GIDSignInButton!
     var recipeCall = RecipeCall()
@@ -86,6 +86,27 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
         }
     }
     
+    //Table View Contents
+    
+    @IBOutlet var tableView: UITableView!
+    
+    var names = ["Salmon", "Pizza", "Steak", "Stew", "Orange Chicken"]
+    var images = [UIImage(named: "Salmon"),UIImage(named: "Pizza"), UIImage(named: "Steak"), UIImage(named: "Stew"), UIImage(named: "Orange Chicken")]
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return 5
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    {
+        let cell = self.tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! CustomCell
+        
+        cell.photo.image = images[indexPath.row]
+        cell.name.text = names[indexPath.row]
+        
+        return cell
+    }
 
     
     
