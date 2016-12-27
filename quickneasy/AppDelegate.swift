@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import GoogleSignIn
 import FirebaseAuth
+import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
@@ -48,6 +49,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         
         GIDSignIn.sharedInstance().delegate = self
         
+        if GIDSignIn.sharedInstance().hasAuthInKeychain() {
+            
+            let sb = UIStoryboard(name: "Main", bundle: nil)
+            if let tabBarVC = sb.instantiateViewControllerWithIdentifier("searchView") as? ViewController {
+                window!.rootViewController = tabBarVC
+            }
+            /* Code to show your tab bar controller */
+            print("------>you are signed in!")
+        } else {
+            /* code to show your login VC */
+            print("------->you are not")
+        }
+        
         return true
     }
 
@@ -57,8 +71,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
                                                     sourceApplication: options[UIApplicationOpenURLOptionsSourceApplicationKey] as? String,
                                                     annotation: options[UIApplicationOpenURLOptionsAnnotationKey])
     }
- 
-   
+    
+    
     func application(application: UIApplication,
                      openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
         var options: [String: AnyObject] = [UIApplicationOpenURLOptionsSourceApplicationKey: sourceApplication!,
