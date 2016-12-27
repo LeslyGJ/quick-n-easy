@@ -13,5 +13,6 @@ target 'quickneasy' do
   pod 'Google/SignIn'
 
   pod 'Alamofire', '3.2.1'
+  pod 'ObjectMapper', '~> 1.0'
 
 end
