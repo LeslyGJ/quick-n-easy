@@ -27,7 +27,7 @@
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wcq-fd-8rm" customClass="GIDSignInButton">
                                 <rect key="frame" x="20" y="380" width="280" height="55"/>
                                 <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="C5ACE9AB-AE60-4A50-99CB-1C1C39B80935" translatesAutoresizingMaskIntoConstraints="NO" id="N3A-Fl-FQD">
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="ECF20926-8548-456D-A144-FFE1403634D4" translatesAutoresizingMaskIntoConstraints="NO" id="N3A-Fl-FQD">
                                         <rect key="frame" x="117" y="5" width="45" height="45"/>
                                     </imageView>
                                 </subviews>
@@ -163,7 +163,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="C5ACE9AB-AE60-4A50-99CB-1C1C39B80935" width="18" height="18">
+        <image name="ECF20926-8548-456D-A144-FFE1403634D4" width="18" height="18">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGOjtYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBEW
 GxwgISgrLjQ3VSRudWxs1AkKCwwNDg8QViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBzV05TQ29sb3KA
