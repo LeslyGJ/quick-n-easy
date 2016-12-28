@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		097C54871E026783000FEC46 /* GoogleToolboxForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 097C54861E026783000FEC46 /* GoogleToolboxForMac.framework */; };
 		09BE14D71E0E10ED00CF71C7 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BE14D61E0E10ED00CF71C7 /* ContentViewController.swift */; };
+		09E170221E13FBF500D11B35 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E170211E13FBF500D11B35 /* MenuViewController.swift */; };
+		09E170241E13FC2100D11B35 /* MenuHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E170231E13FC2100D11B35 /* MenuHelper.swift */; };
 		2307F2441E0F5AFC00572D4B /* RecipeCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2307F2421E0F5AFC00572D4B /* RecipeCall.swift */; };
 		2307F2451E0F5AFC00572D4B /* RecipeUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2307F2431E0F5AFC00572D4B /* RecipeUrl.swift */; };
 		2319479F1DD7D20E000C7429 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2319479E1DD7D20E000C7429 /* GoogleService-Info.plist */; };
@@ -27,6 +29,8 @@
 		097C54851E0266C9000FEC46 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		097C54861E026783000FEC46 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleToolboxForMac.framework; path = "../../../Library/Developer/Xcode/DerivedData/quickneasy-chhrrlgbjflmhtfglonjqisbxcai/Build/Products/Debug-iphonesimulator/GoogleToolboxForMac/GoogleToolboxForMac.framework"; sourceTree = "<group>"; };
 		09BE14D61E0E10ED00CF71C7 /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		09E170211E13FBF500D11B35 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		09E170231E13FC2100D11B35 /* MenuHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuHelper.swift; sourceTree = "<group>"; };
 		0E39F622F51A5835A28F1504 /* Pods_quickneasy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_quickneasy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2307F2421E0F5AFC00572D4B /* RecipeCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCall.swift; sourceTree = "<group>"; };
 		2307F2431E0F5AFC00572D4B /* RecipeUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeUrl.swift; sourceTree = "<group>"; };
@@ -120,6 +124,8 @@
 				2307F23A1E0F49CF00572D4B /* Networking */,
 				2319479E1DD7D20E000C7429 /* GoogleService-Info.plist */,
 				23DFA2E21DCBF44700D036A0 /* AppDelegate.swift */,
+				09E170211E13FBF500D11B35 /* MenuViewController.swift */,
+				09E170231E13FC2100D11B35 /* MenuHelper.swift */,
 				23DFA2E41DCBF44700D036A0 /* ViewController.swift */,
 				09BE14D61E0E10ED00CF71C7 /* ContentViewController.swift */,
 				23DFA2E61DCBF44700D036A0 /* Main.storyboard */,
@@ -274,9 +280,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09E170241E13FC2100D11B35 /* MenuHelper.swift in Sources */,
 				23DFA2E51DCBF44700D036A0 /* ViewController.swift in Sources */,
 				09BE14D71E0E10ED00CF71C7 /* ContentViewController.swift in Sources */,
 				23DFA2E31DCBF44700D036A0 /* AppDelegate.swift in Sources */,
+				09E170221E13FBF500D11B35 /* MenuViewController.swift in Sources */,
 				2307F2451E0F5AFC00572D4B /* RecipeUrl.swift in Sources */,
 				407CF4C21E1285E700EB11CE /* CustomCell.swift in Sources */,
 				2307F2441E0F5AFC00572D4B /* RecipeCall.swift in Sources */,
