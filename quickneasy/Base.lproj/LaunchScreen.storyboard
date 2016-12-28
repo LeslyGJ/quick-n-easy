@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -14,14 +14,53 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D4d-on-Owg">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="yFl-Pd-KgK">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="iNR-6x-c1p">
+                                            <rect key="frame" x="142" y="391" width="37" height="37"/>
+                                            <color key="color" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </activityIndicatorView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="JKF-io-za0">
+                                            <rect key="frame" x="4" y="40" width="312" height="267"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="267" id="pE5-Jz-zfJ"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="iNR-6x-c1p" secondAttribute="bottom" constant="140" id="4WF-hG-qVn"/>
+                                        <constraint firstItem="JKF-io-za0" firstAttribute="top" secondItem="yFl-Pd-KgK" secondAttribute="top" constant="40" id="5GB-Dp-zfP"/>
+                                        <constraint firstItem="JKF-io-za0" firstAttribute="leading" secondItem="yFl-Pd-KgK" secondAttribute="leading" constant="4" id="JhF-2m-fr5"/>
+                                        <constraint firstItem="iNR-6x-c1p" firstAttribute="top" secondItem="JKF-io-za0" secondAttribute="bottom" constant="84" id="WwE-Pf-AOZ"/>
+                                        <constraint firstItem="iNR-6x-c1p" firstAttribute="centerX" secondItem="yFl-Pd-KgK" secondAttribute="centerX" id="dB6-Aw-33S"/>
+                                        <constraint firstItem="JKF-io-za0" firstAttribute="centerX" secondItem="iNR-6x-c1p" secondAttribute="centerX" id="tkC-dL-HCp"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="D4d-on-Owg" secondAttribute="trailing" id="6Gn-lz-pRy"/>
+                            <constraint firstItem="D4d-on-Owg" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="ciU-tQ-6kC"/>
+                            <constraint firstItem="D4d-on-Owg" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="qbv-Z1-eJz"/>
+                            <constraint firstItem="D4d-on-Owg" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="z5V-2Q-Q85"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="28" y="355"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo" width="473" height="280"/>
+    </resources>
 </document>
