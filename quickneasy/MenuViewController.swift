@@ -7,15 +7,6 @@
 //
 
 import Foundation
-//
-//  MenuViewController.swift
-//  quickneasy
-//
-//  Created by bear on 12/27/16.
-//  Copyright © 2016 LEA. All rights reserved.
-//
-
-import Foundation
 import UIKit
 
 class MenuViewController : UIViewController {
@@ -40,10 +31,9 @@ class MenuViewController : UIViewController {
         dismissViewControllerAnimated(true, completion: nil)
     }
     
-    @IBAction func didTapSignOut(sender: AnyObject) {GIDSignIn.sharedInstance().signOut()
-        
+    @IBAction func didTapSignOut(sender: AnyObject) {
+        GIDSignIn.sharedInstance().signOut()
         print("Signout")
-        
     }
     
 }
