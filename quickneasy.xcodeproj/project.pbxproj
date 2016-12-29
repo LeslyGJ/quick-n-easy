@@ -15,10 +15,11 @@
 		2307F2451E0F5AFC00572D4B /* RecipeUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2307F2431E0F5AFC00572D4B /* RecipeUrl.swift */; };
 		2319479F1DD7D20E000C7429 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2319479E1DD7D20E000C7429 /* GoogleService-Info.plist */; };
 		23DFA2E31DCBF44700D036A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DFA2E21DCBF44700D036A0 /* AppDelegate.swift */; };
-		23DFA2E51DCBF44700D036A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DFA2E41DCBF44700D036A0 /* ViewController.swift */; };
+		23DFA2E51DCBF44700D036A0 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DFA2E41DCBF44700D036A0 /* SignInViewController.swift */; };
 		23DFA2E81DCBF44700D036A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23DFA2E61DCBF44700D036A0 /* Main.storyboard */; };
 		23DFA2EA1DCBF44700D036A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23DFA2E91DCBF44700D036A0 /* Assets.xcassets */; };
 		23DFA2ED1DCBF44700D036A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23DFA2EB1DCBF44700D036A0 /* LaunchScreen.storyboard */; };
+		23E669D21E14A95700C43B32 /* RecipeSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E669D11E14A95700C43B32 /* RecipeSearchViewController.swift */; };
 		407CF4C21E1285E700EB11CE /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407CF4C11E1285E700EB11CE /* CustomCell.swift */; };
 		FCE6747C13BD412B629D2130 /* Pods_quickneasy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E39F622F51A5835A28F1504 /* Pods_quickneasy.framework */; };
 /* End PBXBuildFile section */
@@ -37,11 +38,12 @@
 		2319479E1DD7D20E000C7429 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		23DFA2DF1DCBF44700D036A0 /* quickneasy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quickneasy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23DFA2E21DCBF44700D036A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		23DFA2E41DCBF44700D036A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		23DFA2E41DCBF44700D036A0 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		23DFA2E71DCBF44700D036A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		23DFA2E91DCBF44700D036A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23DFA2EC1DCBF44700D036A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23DFA2EE1DCBF44700D036A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23E669D11E14A95700C43B32 /* RecipeSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeSearchViewController.swift; sourceTree = "<group>"; };
 		407CF4C11E1285E700EB11CE /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		53677833A0BE150E1E0CC7AA /* Pods-quickneasy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-quickneasy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-quickneasy/Pods-quickneasy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,13 +76,6 @@
 				2307F2431E0F5AFC00572D4B /* RecipeUrl.swift */,
 			);
 			path = Recipe;
-			sourceTree = "<group>";
-		};
-		2307F2461E0F705100572D4B /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		23958DEA1E13226C008DBDD1 /* Models */ = {
@@ -119,14 +114,14 @@
 		23DFA2E11DCBF44700D036A0 /* quickneasy */ = {
 			isa = PBXGroup;
 			children = (
+				23E669D01E14A93700C43B32 /* ViewControllers */,
 				23958DEA1E13226C008DBDD1 /* Models */,
-				2307F2461E0F705100572D4B /* ViewControllers */,
 				2307F23A1E0F49CF00572D4B /* Networking */,
 				2319479E1DD7D20E000C7429 /* GoogleService-Info.plist */,
 				23DFA2E21DCBF44700D036A0 /* AppDelegate.swift */,
 				09E170211E13FBF500D11B35 /* MenuViewController.swift */,
 				09E170231E13FC2100D11B35 /* MenuHelper.swift */,
-				23DFA2E41DCBF44700D036A0 /* ViewController.swift */,
+				23DFA2E41DCBF44700D036A0 /* SignInViewController.swift */,
 				09BE14D61E0E10ED00CF71C7 /* ContentViewController.swift */,
 				23DFA2E61DCBF44700D036A0 /* Main.storyboard */,
 				407CF4C11E1285E700EB11CE /* CustomCell.swift */,
@@ -136,6 +131,14 @@
 				093384351E024F9C00A46AE7 /* quickneasy-Bridging-Header.h */,
 			);
 			path = quickneasy;
+			sourceTree = "<group>";
+		};
+		23E669D01E14A93700C43B32 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				23E669D11E14A95700C43B32 /* RecipeSearchViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		B3EA543C4B762860C11330DD /* Frameworks */ = {
@@ -281,8 +284,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				09E170241E13FC2100D11B35 /* MenuHelper.swift in Sources */,
-				23DFA2E51DCBF44700D036A0 /* ViewController.swift in Sources */,
+				23DFA2E51DCBF44700D036A0 /* SignInViewController.swift in Sources */,
 				09BE14D71E0E10ED00CF71C7 /* ContentViewController.swift in Sources */,
+				23E669D21E14A95700C43B32 /* RecipeSearchViewController.swift in Sources */,
 				23DFA2E31DCBF44700D036A0 /* AppDelegate.swift in Sources */,
 				09E170221E13FBF500D11B35 /* MenuViewController.swift in Sources */,
 				2307F2451E0F5AFC00572D4B /* RecipeUrl.swift in Sources */,
