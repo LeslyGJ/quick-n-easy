@@ -64,6 +64,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
             print("------->you are not")
         }
         
+        if(SignInViewController.themeOne == true){
+            let changeColor = SignInViewController()
+            changeColor.changeColor()
+            changeColor.viewDidLoad()
+            
+        }
+        
         return true
     }
 

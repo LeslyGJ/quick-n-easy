@@ -9,10 +9,10 @@
 import UIKit
 
 class RecipeSearchViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    @IBOutlet var menuBar: UIToolbar!
+    //var menuBar: UIToolbar!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -36,6 +36,40 @@ class RecipeSearchViewController: UIViewController, UITableViewDataSource, UITab
         cell.name.text = names[indexPath.row]
         
         return cell
+    }
+    
+    func toolBarChange(){
+        let load = RecipeSearchViewController()
+            load.viewDidLoad()
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+               let state = SignInViewController.themeOne
+        print("------->:\(state)")
+        
+        if(SignInViewController.themeOne == true){
+            
+            self.view.backgroundColor = UIColorFromHex(0xF1FAE8, alpha: 0.9)
+            if(menuBar != nil){
+                menuBar.barTintColor = UIColor.blackColor()
+            }
+        }
+        else if(SignInViewController.themeOne == false){
+            
+            self.view.backgroundColor = UIColor.whiteColor()
+            if(menuBar != nil){
+                menuBar.barTintColor = UIColor.redColor()
+            }
+        }
+        
+    }
+    
+    func UIColorFromHex(rgbValue:UInt32, alpha:Double=1.0)->UIColor {
+        let red = CGFloat((rgbValue & 0xFF0000) >> 16)/256.0
+        let green = CGFloat((rgbValue & 0xFF00) >> 8)/256.0
+        let blue = CGFloat(rgbValue & 0xFF)/256.0
+        
+        return UIColor(red:red, green:green, blue:blue, alpha:CGFloat(alpha))
     }
 
 }
